@@ -12,5 +12,11 @@ export class LoginComponent {
     email:['',[Validators.required,Validators.email]],
     password:['',[Validators.required]]
   })
+  get email(){
+    return this.loginForm.controls['email'];
+  }
+  get password(){
+    return this.loginForm.controls['password'];
+  }
   
 } 
